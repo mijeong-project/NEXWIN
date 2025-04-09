@@ -345,7 +345,7 @@ h4 {
     }
 
     .technologies-item01::before {
-        background: url(../img/overviwe01.png) no-repeat 80% center /cover;
+        background: url(../img/overview01.png) no-repeat 80% center /cover;
     }
 
     .technologies-item02::before {
