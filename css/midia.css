@@ -1,0 +1,582 @@
+@charset "utf-8";
+
+:root {
+    --main-color: #1359B6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #01011A;
+}
+
+ul,
+ol {
+    list-style: none;
+    color: #01011A;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'pretendard';
+    line-height: 1.5;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    color: #01011A;
+}
+
+#wrap {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.inner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+@media (max-width: 1571px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    /* main-banner */
+
+    .main-banner {
+        padding: 200px 100px;
+    }
+
+}
+
+@media (max-width:1230px) {
+    .key-item{
+        font-size: 18px;
+    }
+    /* footer */
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .footer-top .f_logo {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .footer-top .footer-ul {
+        order: 0;
+    }
+}
+
+@media (max-width:1150px) {
+
+    /* header */
+    .nav {
+        padding: 30px 50px;
+    }
+
+    /* overview */
+    .research-item h5 {
+        width: 50%;
+    }
+
+    .research-item p {
+        width: 80%;
+    }
+
+    /* contact */
+    .map iframe {
+        width: 100%;
+    }
+
+    .contact-item {
+        flex-direction: column;
+    }
+
+    .contact-ul li:nth-of-type(1) {
+        display: none;
+    }
+
+    .contact-ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width:1000px) {
+
+    /* main_banner */
+    .main-banner h1 img {
+        height: 25px;
+    }
+
+    /* company */
+    .com-ceo {
+        flex-direction: column;
+        gap: 0;
+        padding: 40px 20px;
+    }
+
+    .com-ceo-txt {
+        padding: 10PX 30PX;
+    }
+
+    .com-ceo li:nth-of-type(1) {
+        text-align: center;
+    }
+
+    /* overview */
+    .research-ul {
+        padding: 50px 0;
+    }
+
+    /* contact */
+    .contact-ul p {
+        font-size: 16px;
+    }
+
+    .contact-ul li:last-of-type .contact-icon {
+        margin-top: 10px; 
+      }
+
+    /* top-btn */
+    .top-btn,
+    .top-hover {
+        right: 50px;
+    }
+}
+
+@media (max-width:960px) {
+
+    /* main_banner */
+    .main-banner h1 {
+        margin-bottom: 20px;
+    }
+
+    /* overview */
+    .technologies-item p {
+        width: 70%;
+    }
+
+    .research-item p {
+        width: 90%;
+    }
+}
+
+@media (max-width:938px) {
+    .research-item h5 {
+        width: 60%;
+    }
+}
+
+
+@media (max-width:860px) {
+    .gnb {
+        display: none;
+    }
+
+    /* 햄버거 버튼 보이기 */
+    .mgnb-wrap,
+    .menu-trigger {
+        display: block;
+    }
+
+    /* 햄버거 열렸을 때 mobile-nav 보이기 */
+    .mobile-nav {
+        display: none;
+        /* 기본 숨김 */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* overview */
+    .technologies-item01,
+    .technologies-item02,
+    .technologies-item03,
+    .technologies-item04 {
+        background-position: 80% center;
+    }
+
+    .technologies-item li p {
+        background-color: rgba(19, 89, 182, 0.2);
+    }
+
+    .history img:nth-of-type(1){
+        display: none;
+    }
+
+    .history_mo{
+        display: block;
+    }
+
+    .contact-ul li:last-of-type .contact-icon {
+        margin-top: 7px; 
+      }
+
+}
+
+@media (max-width:800px) {
+
+    /* main-banner */
+    .main-banner h1 {
+        font-size: 30px;
+    }
+
+    .main-banner h4 {
+        font-size: 16px;
+    }
+
+    /* overview */
+    .research-item h5 {
+        width: 70%;
+    }
+
+    .research-item p {
+        font-size: 16px;
+    }
+
+    .contact-ul {
+        justify-content: start;
+    }
+
+}
+
+@media (max-width:750px) {
+    .overwiew_banner {
+        height: 330px;
+    }
+
+    .overwiew_banner h2 {
+        font-size: 25px;
+    }
+
+    .history img {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media (max-width:650px) {
+    .main-banner {
+        padding: 200px 30px;
+    }
+
+    .key-features ul {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: -5rem auto
+    }
+
+    #section {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:600px) {
+    .key-item {
+        width: 50%;
+    }
+    .history{
+        padding: 10px 20px;
+    }
+    .history h2{
+        margin: 10px 0 20px;
+    }
+    /* overview */
+    .technologies-item01,
+    .technologies-item02,
+    .technologies-item03,
+    .technologies-item04 {
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        z-index: 1;
+    }
+
+    .technologies-item01::before,
+    .technologies-item02::before,
+    .technologies-item03::before,
+    .technologies-item04::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        filter: blur(5px);
+        z-index: -1;
+        /* 텍스트 아래로 보내기 */
+    }
+
+    .technologies-item01::before {
+        background: url(../img/overviwe01.png) no-repeat 80% center /cover;
+    }
+
+    .technologies-item02::before {
+        background: url(../img/overviwe02.png) no-repeat 80% center /cover;
+    }
+
+    .technologies-item03::before {
+        background: url(../img/overviwe03.png) no-repeat 80% center /cover;
+    }
+
+    .technologies-item04::before {
+        background: url(../img/overviwe04.png) no-repeat 80% center /cover;
+    }
+
+    .technologies-item li p {
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .research-item h5 {
+        width: 80%;
+    }
+    #footer{
+        padding: 30px;
+    }
+    .footer-ul li,
+    .copy p{
+        font-size: 14px;
+    }
+    .footer-ul li:nth-of-type(1){
+        font-size: 16px;
+    }
+    .top-btn, .top-hover{
+        right: 30px;
+    }
+}
+
+@media (max-width:520px) {
+    .nav{
+        padding: 30px;
+    }
+    .main-banner{
+        padding: 150px 30px 200px;
+    }
+    .main-banner h1 img{
+        height: 20px;
+    }
+    .key-item{
+        font-size: 16px;
+    }
+
+    .highlight2 {
+        width: 440px;
+        margin-left: -220px;
+    }
+
+    .research-ul {
+        padding: 20px;
+    }
+
+    .research-item h5,
+    .research-item p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-top .f_logo img{
+        width: 130px;
+    }
+
+}
+@media (max-width:470px) {
+    h2{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .logo img{
+        width: 130px;
+    }
+    .menu-trigger {
+        position: relative;
+        width: 30px;   /* 버튼 너비 */
+        height: 22px;  /* 버튼 높이 (총 영역) */
+        z-index: 10001;
+      }
+      
+      .menu-trigger span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px; /* 선 두께 */
+        background-color: #fff;
+        border-radius: 10px;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+      }
+      
+      /* 세 줄 간격 재설정 */
+      .menu-trigger span:nth-of-type(1) {
+        top: 0;
+      }
+      
+      .menu-trigger span:nth-of-type(2) {
+        top: 9.5px; /* 가운데 */
+      }
+      
+      .menu-trigger span:nth-of-type(3) {
+        bottom: 0;
+      }
+      .menu-trigger.active span {
+        background-color: #01011A;
+      }
+      
+      .menu-trigger.active span:nth-of-type(1) {
+        transform: translateY(9.5px) rotate(-45deg);
+      }
+      
+      .menu-trigger.active span:nth-of-type(2) {
+        opacity: 0;
+      }
+      
+      .menu-trigger.active span:nth-of-type(3) {
+        transform: translateY(-9.5px) rotate(45deg);
+      }
+    .highlight{
+        width: 320px;
+        margin-left: -160px;
+    }
+    .highlight2{
+        width: 400px;
+        margin-left: -200px;
+    }
+    .technologies-item li{
+        padding: 80px 20px;
+    }
+    .technologies-item b{
+        font-size: 20px;
+    }
+    .technologies-item li span::after{
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+    }
+    .technologies-item li p{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .research-item h5, .research-item p{
+        font-size: 16px;
+    }
+    .research-item p{
+        font-size: 14px;
+    }
+    .overwiew_banner h2{
+        font-size: 20px;
+    }
+    .com-ceo b{
+        font-size: 16px;
+    }
+
+
+}
+@media (max-width:420px){
+    .com-ceo-txt{
+        padding: 10px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .com-ceo-txt{
+        font-size: 14px;
+    }
+    .highlight,.highlight2{
+        top: 15px;
+    }
+    .highlight{
+        width: 240px;
+        margin-left: -120px;
+    }
+    .highlight2{
+        width: 300px;
+        margin-left: -150px;
+    }
+    .research-title h4{
+        font-size: 16px;
+    }
+    .research-title p{
+        font-size: 14px;
+    }
+    .contact{
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width:370px){
+    h2{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .com-ceo{
+        padding: 0;
+    }
+    .technologies-item li p{
+        margin-top: 30px;
+    }
+    .history {
+        padding: 50px 10px 20px;
+    }
+    .overview,.contact{
+        padding: 20px;
+    }
+    .contact-item{
+        padding: 20px 0;
+    }
+    
+}
+
+@media (max-width:350px){
+    .com-ceo li:nth-of-type(1) img{
+        width: 300px;
+    }
+    .overwiew_banner{
+        padding: 10px;
+    }
+    .copy p{
+        font-size: 12px;
+    }
+    .key-item{
+        font-size: 14px;
+    }
+}
