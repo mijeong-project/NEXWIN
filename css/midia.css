@@ -428,7 +428,9 @@ h4 {
         width: 130px;
     }
     .menu-trigger {
-        position: relative;
+        position: fixed; /* 다시 고정 위치로! */
+        top: 30px;
+        right: 20px;
         width: 30px;   /* 버튼 너비 */
         height: 22px;  /* 버튼 높이 (총 영역) */
         z-index: 10001;
