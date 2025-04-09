@@ -653,12 +653,6 @@ header {
     font-weight: 200;
 }
 
-.footer-ul li:nth-of-type(1) {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
 .copy p {
     margin-top: 10px;
     font-size: 16px;
